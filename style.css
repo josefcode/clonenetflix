@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.title {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  z-index: 5;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+/* main nav style */
+.navbar {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#navbar {
+  width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: 35px;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  color: gray;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-top: 13px;
+}
+#navbar ul a {
+  text-decoration: none;
+  color: gray;
+}
+#navbar ul img {
+  width: 100%;
+  height: 100%;
+  max-width: 8rem;
+  margin-top: 12px;
+}
+#navbar ul a:hover {
+  transition: 1s ease-in-out;
+  color: white;
+}
+
+/* banner bootstrap */
+.carousel-inner {
+  width: 100%;
+  height: 850px;
+}
+/* card style  */
+.list-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box-lista {
+  width: 300px;
+  height: 180px;
+  list-style: none;
+  color: rgb(173, 169, 169);
+  position: relative;
+  bottom: 200px;
+  z-index: 5;
+}
+.box-lista img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid rgb(230, 230, 230);
+  border-radius: 3px;
+  transition: transform ease-in-out 1s;
+}
+.box-lista img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+
+  color: rgb(196, 188, 188);
+  font-size: 20px;
+}
+/* icon style */
+.bi {
+  color: rgb(241, 56, 56);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+/* mobile screen style */
+@media (max-width: 800px) {
+  .title {
+    font-size: 2rem;
+    top: 45%;
+    left: 15%;
+  }
+  /* main nav style */
+  #navbar {
+    display: block;
+    z-index: 20;
+    height: 250px;
+    margin: 0 auto;
+    position: sticky;
+  }
+
+  #navbar ul {
+    display: block;
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+    margin-right: 40px;
+  }
+  #navbar button {
+    width: 200px;
+  }
+  /* banner */
+  div.carousel-inner {
+    height: 600px;
+  }
+  .list-container {
+    height: 600px;
+  }
+
+  footer {
+    height: 200px;
+  }
+}
